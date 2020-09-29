@@ -3,6 +3,7 @@ package com.robsoncraftsman.java8.streams;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class ExemploStreams {
@@ -40,6 +41,18 @@ public class ExemploStreams {
 			.map(Curso::getNome)
 			.collect(Collectors.toList());
 		System.out.println(nomesCurso);
+
+		// Map para um Map<String, Integer>
+		final Map<String, Integer> mapCursos = cursos.stream()
+			.collect(Collectors.toMap(Curso::getNome, Curso::getAlunos));
+		mapCursos.forEach((nome, alunos) -> System.out.println(String.format("%s tem %d alunos", nome, alunos)));
+
+		// Stream usando paralelismo
+		// Para casos onde há manipulação de muitos elementos ou operações muito complexas
+		// Operações não podem ser Stateful
+		cursos.parallelStream()
+			.filter(c -> c.getAlunos() > 1000)
+			.forEach(c -> System.out.println(String.format("%s = %s", Thread.currentThread().getName(), c.getNome())));
 	}
 
 }
