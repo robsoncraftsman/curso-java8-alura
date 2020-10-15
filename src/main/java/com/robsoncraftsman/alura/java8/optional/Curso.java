@@ -1,4 +1,4 @@
-package com.robsoncraftsman.java8.optional;
+package com.robsoncraftsman.alura.java8.optional;
 
 public class Curso {
 

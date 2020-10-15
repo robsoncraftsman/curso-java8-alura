@@ -1,4 +1,4 @@
-package com.robsoncraftsman.java8.default_methods;
+package com.robsoncraftsman.alura.java8.default_methods;
 
 import java.util.ArrayList;
 import java.util.Collections;

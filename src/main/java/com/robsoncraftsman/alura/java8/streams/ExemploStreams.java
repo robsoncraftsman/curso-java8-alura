@@ -1,4 +1,4 @@
-package com.robsoncraftsman.java8.streams;
+package com.robsoncraftsman.alura.java8.streams;
 
 import java.util.ArrayList;
 import java.util.Comparator;

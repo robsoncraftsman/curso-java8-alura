@@ -1,4 +1,4 @@
-package com.robsoncraftsman.java8.date_api;
+package com.robsoncraftsman.alura.java8.date_api;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

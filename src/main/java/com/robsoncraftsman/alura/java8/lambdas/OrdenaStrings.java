@@ -1,4 +1,4 @@
-package com.robsoncraftsman.java8.lambdas;
+package com.robsoncraftsman.alura.java8.lambdas;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.robsoncraftsman.java8.method_references;
+package com.robsoncraftsman.alura.java8.method_references;
 
 import java.util.ArrayList;
 import java.util.Comparator;
